@@ -63,6 +63,8 @@ export class SuperGalactic{
     } else if (this.age > this.lifeExpectancy){
       yearDiff = this.yearsPast();
       outputString = `Congratulations! You've surpassed your life expectancy. Your age on Mercury would be ${planetAges.mercury} and you have lived ${yearDiff.mercury} years past your life expectancy. Your age on Venus would be ${planetAges.venus} and you have lived ${yearDiff.venus} years past your life expectancy. Your age on Mars would be ${planetAges.mars} and you have lived ${yearDiff.mars} years past your life expectancy. Your age on Jupiter would be ${planetAges.jupiter} and you have lived ${yearDiff.jupiter} years past your life expectancy.`;
+    } else if (this.age === this.lifeExpectancy) {
+      
     }
     return outputString;
   }
