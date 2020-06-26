@@ -2,6 +2,7 @@ export class SuperGalactic{
   constructor(age, lifeExpectancy) {
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
+    this.planetArray = ['mercury', 'venus', 'mars', 'jupiter'];
   }
 
   galacticYears(age, planet) {
@@ -26,20 +27,28 @@ export class SuperGalactic{
   }
 
   yearsLeft() {
-    let planetArray = ['mercury', 'venus', 'mars', 'jupiter'];
     let yearsLeftObj = {};
-    for(let planet of planetArray) {
+    for(let planet of this.planetArray) {
       yearsLeftObj[planet] = ((this.galacticYears(this.lifeExpectancy, planet) - this.galacticYears(this.age, planet)).toFixed(1));
     }
     return yearsLeftObj;
   }
 
   yearsPast() {
-    let planetArray = ['mercury', 'venus', 'mars', 'jupiter'];
+    const planetArray = ['mercury', 'venus', 'mars', 'jupiter'];
     let yearsPastObj = {};
-    for(let planet of planetArray) {
+    for(let planet of this.planetArray) {
       yearsPastObj[planet] = ((this.galacticYears(this.age, planet) - this.galacticYears(this.lifeExpectancy, planet)).toFixed(1));
     }
     return yearsPastObj;
+  }
+
+  getAllPlanetAges() {
+    let planetAges = {};
+
+    for(let planet of this.planetArray) {
+      planetAges[planet] = this.galacticYears(this.age, planet);
+    }
+    return planetAges;
   }
 };
