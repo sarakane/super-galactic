@@ -49,6 +49,7 @@ describe('SuperGalactic', () => {
   });
 
   test('If the user is older than life expectancy, the program should return the users age and years past expectancy for all planets as a string', () => {
+    console.log(surpassedAverage.runSuperGalactic());
     expect(surpassedAverage.runSuperGalactic()).toEqual("Congratulations! You've surpassed your life expectancy. Your age on Mercury would be 341.7 and you have lived 4.2 years past your life expectancy. Your age on Venus would be 132.3 and you have lived 1.7 years past your life expectancy. Your age on Mars would be 43.6 and you have lived 0.5 years past your life expectancy. Your age on Jupiter would be 6.9 and you have lived 0.1 years past your life expectancy.");
   });
 });
