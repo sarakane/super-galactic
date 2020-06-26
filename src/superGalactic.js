@@ -4,4 +4,7 @@ export class SuperGalactic{
     this.lifeExpectancy = lifeExpectancy;
   }
 
+  mercuryYears(age) {
+    
+  }
 };

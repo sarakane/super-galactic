@@ -12,4 +12,8 @@ describe('SuperGalactic', () => {
     expect(superGalactic.age).toEqual(27);
     expect(superGalactic.lifeExpectancy).toEqual(81);
   });
+
+  test('Returns the user\'s age in Mercury years ', () => {
+    expect(superGalactic.mercuryYears(superGalactic.age)).toEqual(112.5)
+  });
 });
