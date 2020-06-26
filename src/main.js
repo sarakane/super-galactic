@@ -4,5 +4,7 @@ import './styles.css';
 import $ from "jquery";
 
 $(document).ready(function() {
-
+  $("form#ageForm").submit(function(event) {
+    event.preventDefault();
+  });
 });

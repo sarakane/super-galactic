@@ -2,9 +2,25 @@
 <html>
   <head>
     <script type="text/javascript" src="bundle.js"></script>
-    <title>Project Name</title>
+    <title>Super Galactic</title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Super Galactic Age Calculator</h1>
+        <p>Enter your age and life expectancy to see how old you would be on Mercury, Venus, Mars, and Jupiter!</p>
+      </div>
+      <form id="ageForm">
+        <div class="form-group">
+          <label for="age">Enter your age</label>
+          <input type="text" id="age" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="lifeExpectancy">Enter your life expectancy:</label>
+          <input type="text" id="lifeExpectancy" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-info">Show me my galactic ages!</button>
+      </form>
+    </div>
   </body>
 </html>
