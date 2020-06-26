@@ -8,12 +8,16 @@ describe('SuperGalactic', () => {
   });
 
   test('Take a persons age and average life expectancy and create a class ', () => {
-    console.log(superGalactic);
     expect(superGalactic.age).toEqual(27);
     expect(superGalactic.lifeExpectancy).toEqual(81);
   });
 
-  test('Returns the user\'s age in Mercury years ', () => {
-    expect(superGalactic.mercuryYears(superGalactic.age)).toEqual(112.5)
+  test('Returns the users age in Mercury years ', () => {
+    console.log(superGalactic.mercuryYears(superGalactic.age));
+    expect(superGalactic.mercuryYears(superGalactic.age)).toEqual(112.5);
+  });
+
+  test('Returns the users age in Venus years', () => {
+    expect(superGalactic.venusYears(superGalactic.age)).toEqual(43.5);
   });
 });
