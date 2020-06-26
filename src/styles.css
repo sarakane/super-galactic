@@ -1,0 +1,13 @@
+#output {
+  margin: 10px;
+}
+
+.jumbotron {
+  background-color: blueviolet;
+  color: white;
+}
+
+.btn {
+  background-color: blueviolet;
+  color: white;
+}
