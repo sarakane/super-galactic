@@ -26,6 +26,14 @@ export class SuperGalactic{
   }
 
   yearsLeft() {
-    
+    let planetArray = ['mercury', 'venus', 'mars', 'jupiter'];
+    let yearsLeftObj = {};
+    for(let planet of planetArray) {
+/*       console.log(this.galacticYears(this.lifeExpectancy, planet));
+      console.log(this.galacticYears(this.age, planet));
+      console.log(this.galacticYears(this.lifeExpectancy, planet) - this.galacticYears(this.age, planet)); */
+      yearsLeftObj[planet] = ((this.galacticYears(this.lifeExpectancy, planet) - this.galacticYears(this.age, planet)).toFixed(1));
+    }
+    return yearsLeftObj;
   }
 };

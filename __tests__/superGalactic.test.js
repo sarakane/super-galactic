@@ -31,6 +31,7 @@ describe('SuperGalactic', () => {
   });
 
   test('Determine how many years a user has left to live on each planet', () => {
-    expect(superGalactic.yearsLeft()).toEqual({mercury:225.0, venus: 87.1, mars: 28.7, jupiter: 4.5});
+    console.log(superGalactic.yearsLeft());
+    expect(superGalactic.yearsLeft()).toEqual({mercury: "225.0", venus: "87.1", mars: "28.7", jupiter: "4.5"});
   });
 });
