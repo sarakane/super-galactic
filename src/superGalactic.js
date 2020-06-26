@@ -11,4 +11,8 @@ export class SuperGalactic{
   venusYears(age) {
     return (parseFloat((age/0.62).toFixed(1)));
   }
+
+  marsYears(age) {
+    //return (parseFloat((age/1.88).toFixed(1)));
+  }
 };
