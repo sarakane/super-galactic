@@ -5,10 +5,10 @@ export class SuperGalactic{
   }
 
   mercuryYears(age) {
-    return (Math.fround(age/0.24));
+    return (parseFloat((age/0.24).toFixed(1)));
   }
 
   venusYears(age) {
-    return (Math.fround(age/0.62));
+    return (parseFloat((age/0.62).toFixed(1)));
   }
 };

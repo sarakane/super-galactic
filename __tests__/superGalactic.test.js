@@ -18,6 +18,7 @@ describe('SuperGalactic', () => {
   });
 
   test('Returns the users age in Venus years', () => {
+    console.log(superGalactic.venusYears(superGalactic.age));
     expect(superGalactic.venusYears(superGalactic.age)).toEqual(43.5);
   });
 });
