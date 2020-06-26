@@ -1,14 +1,23 @@
-# _Project_
+# _Super Galactic Age Calculator_
 
-#### _JavaScript/jQuery Exercise for [Epicodus](https://www.epicodus.com/), 2020.mm.dd_
+#### _JavaScript/jQuery Exercise for [Epicodus](https://www.epicodus.com/), 2020.06.26_
 
 #### By **Sara Kane**
 
 ## Description
-This project is a fake website for a pizza company. It allows a user to select a pizza size and toppings and then order the pizza to see the final price.
+
 
 ## Specifications
 
+| Behavior                                                                                                                  |  Input | Output                                                   |
+|---------------------------------------------------------------------------------------------------------------------------|:------:|----------------------------------------------------------|
+| Take a persons age and average life expectancy and create a class                                                         | 27, 81 | Class instance is created                                |
+| Returns the user's age in Mercury years                                                                                   |   27   | 112.5                                                    |
+| Returns the user's age in Venus                                                                                           |   27   | 43.5                                                     |
+| Returns the user's age in Mars years                                                                                      |   27   | 14.4                                                     |
+| Returns the user's age in Jupiter years                                                                                   |   27   | 2.28                                                     |
+| Determine how many years a user has left to live on each planet                                                           |   27   | On Mercury you would have 225 years left to live         |
+| If user has already surpassed the average life expectancy, return number of years they have live past the life expectancy |   82   | On Mercury you have lived 4.2 years past life expectancy |
 
 ## Known Bugs
 * No known bugs.   
