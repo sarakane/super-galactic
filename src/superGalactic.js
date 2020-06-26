@@ -3,16 +3,22 @@ export class SuperGalactic{
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
   }
-
-  mercuryYears(age) {
-    return (parseFloat((age/0.24).toFixed(1)));
-  }
-
-  venusYears(age) {
-    return (parseFloat((age/0.62).toFixed(1)));
-  }
-
-  marsYears(age) {
-    //return (parseFloat((age/1.88).toFixed(1)));
+  
+  galacticYears(age, planet) {
+    let planetYears;
+    switch(planet) {
+      case 'mercury':
+        planetYears = 0.24;
+        break;
+      case 'venus':
+        planetYears = 0.62;
+        break;
+      case 'mars':
+        planetYears = 1.88;
+        break;
+      default:
+        planetYears = 1;
+    }
+    return (parseFloat((age/planetYears).toFixed(1)));
   }
 };

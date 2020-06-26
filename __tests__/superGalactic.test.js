@@ -13,17 +13,17 @@ describe('SuperGalactic', () => {
   });
 
   test('Returns the users age in Mercury years ', () => {
-    console.log(superGalactic.mercuryYears(superGalactic.age));
-    expect(superGalactic.mercuryYears(superGalactic.age)).toEqual(112.5);
+    console.log(superGalactic.galacticYears(superGalactic.age, 'mercury'));
+    expect(superGalactic.galacticYears(superGalactic.age, 'mercury')).toEqual(112.5);
   });
 
   test('Returns the users age in Venus years', () => {
-    console.log(superGalactic.venusYears(superGalactic.age));
-    expect(superGalactic.venusYears(superGalactic.age)).toEqual(43.5);
+    console.log(superGalactic.galacticYears(superGalactic.age, 'venus'));
+    expect(superGalactic.galacticYears(superGalactic.age, 'venus')).toEqual(43.5);
   });
 
   test('Returns the users age in Mars years', () => {
-    expect(superGalactic.marsYears(superGalactic.age)).toEqual(14.4);
+    console.log(superGalactic.galacticYears(superGalactic.age, 'mars'));
+    expect(superGalactic.galacticYears(superGalactic.age, 'mars')).toEqual(14.4);
   });
-
 });
