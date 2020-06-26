@@ -51,4 +51,16 @@ export class SuperGalactic{
     }
     return planetAges;
   }
+
+  runSuperGalactic() {
+    let planetAges = this.getAllPlanetAges();
+    let yearDiff;
+    let outputString;
+
+    if(this.age < this.lifeExpectancy) {
+      yearDiff = this.yearsLeft();
+      //outputString = `Your age on Mercury would be ${planetAges.mercury} and you would have ${yearDiff.mercury} years left to live. Your age on Venus would be ${planetAges.venus} and you would have ${yearDiff.venus} years left to live. Your age on Mars would be ${planetAges.mars} and you would have ${yearDiff.mars} years left to live. Your age on Jupiter would be ${planetAges.jupiter} and you would have ${yearDiff.jupiter} years left to live.`;
+    }
+    return outputString;
+  }
 };

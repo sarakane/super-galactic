@@ -39,7 +39,12 @@ describe('SuperGalactic', () => {
     expect(surpassedAverage.yearsPast()).toEqual({mercury: "4.2", venus: "1.7", mars: "0.5", jupiter: "0.1"});
   });
 
-  test ('The program should determine the age of the user for each planet', () => {
+  test('The program should determine the age of the user for each planet', () => {
     expect(superGalactic.getAllPlanetAges()).toEqual({mercury: 112.5, venus: 43.5, mars: 14.4, jupiter: 2.3});
-  })
+  });
+
+  test('The program should return the users age and years left to live for all planets as a string', () => {
+    console.log(superGalactic.runSuperGalactic());  
+    expect(superGalactic.runSuperGalactic()).toEqual('Your age on Mercury would be 112.5 and you would have 225.0 years left to live. Your age on Venus would be 43.5 and you would have 87.1 years left to live. Your age on Mars would be 14.4 and you would have 28.7 years left to live. Your age on Jupiter would be 2.3 and you would have 4.5 years left to live.');
+  });
 });
