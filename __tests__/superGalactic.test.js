@@ -37,6 +37,6 @@ describe('SuperGalactic', () => {
 
   test('If user has already surpassed the average life expectancy, return number of years they have live past the life expectancy', () => {
     let surpassedAverage = new SuperGalactic(82, 81);
-    expect(surpassedAverage.yearsPast()).toEqual({mercury: "4.2", venus: "1.6", mars: "0.5", jupiter: "0.1"});
+    expect(surpassedAverage.yearsPast()).toEqual({mercury: "4.2", venus: "1.7", mars: "0.5", jupiter: "0.1"});
   });
 });
