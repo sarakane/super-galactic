@@ -1,4 +1,4 @@
-export class SuperGalactic{
+export class SuperGalactic {
   constructor(age, lifeExpectancy) {
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
@@ -35,7 +35,6 @@ export class SuperGalactic{
   }
 
   yearsPast() {
-    const planetArray = ['mercury', 'venus', 'mars', 'jupiter'];
     let yearsPastObj = {};
     for(let planet of this.planetArray) {
       yearsPastObj[planet] = ((this.galacticYears(this.age, planet) - this.galacticYears(this.lifeExpectancy, planet)).toFixed(1));
@@ -68,4 +67,4 @@ export class SuperGalactic{
     }
     return outputString;
   }
-};
+}

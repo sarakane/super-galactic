@@ -6,6 +6,7 @@
 
 ## Description
 
+This is a webpage that determines a user's age based on the solar years for Mercury, Venus, Mars, and Jupiter. It also determines how many years a user has left to live on each planet, or if the user is older than life expectancy it returns the number of years they have lived past the life expectancy.
 
 ## Specifications
 
@@ -23,23 +24,33 @@
 * No known bugs.   
 
 ## Setup/Installation Requirements
-#### View Online
-Visit the GitHub Pages by clicking on the following link or by typing it in your web browser <url>
 
-#### View locally
-To clone this repository from your command line you will need [Git](https://git-scm.com/) installed. First navigate in the command line to where you want to clone this repository. 
+To clone this repository from your command line you will need [Git](https://git-scm.com/) installed. You will also need [Node.js and npm](https://nodejs.org/en/download/).
+
+First navigate in the command line to where you want to clone this repository. 
 
 Then from your command line run:
 
-`$ git clone {repo url}`
+`$ git clone https://github.com/sarakane/super-galactic`
 
-Once the repository has been cloned, you can open in your preferred code editor to view and edit the code. 
+Once the repository has been cloned, navigate to the to the application directory and run `$ npm install`.
+
+#### View locally
+* In the application directory run: `$ npm start`
+
+#### Test
+* In the application directory run: `$npm test`
+
+### Edit
+* Open the application in your preferred code editor, such as Visual Studio Code.
 
 ## Technologies Used
 * Visual Studio Code (code editor)
 * HTML /CSS
 * Bootstrap-3.3.7
 * JavaScript/jQuery-3.5.1
+* Node.js/npm
+* Webpack
 
 ## License
 This software is licensed under the MIT license. Copyright (c) 2020 Sara Kane.
