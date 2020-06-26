@@ -15,20 +15,22 @@ describe('SuperGalactic', () => {
   });
 
   test('Returns the users age in Mercury years ', () => {
-    console.log(superGalactic.galacticYears(sGAge, 'mercury'));
     expect(superGalactic.galacticYears(sGAge, 'mercury')).toEqual(112.5);
   });
 
   test('Returns the users age in Venus years', () => {
-    console.log(superGalactic.galacticYears(sGAge, 'venus'));
     expect(superGalactic.galacticYears(sGAge, 'venus')).toEqual(43.5);
   });
 
   test('Returns the users age in Mars years', () => {
-    console.log(superGalactic.galacticYears(sGAge, 'mars'));
     expect(superGalactic.galacticYears(sGAge, 'mars')).toEqual(14.4);
   });
+
   test('Returns the users age in Jupiter years', () => {
     expect(superGalactic.galacticYears(sGAge, 'jupiter')).toEqual(2.3);
+  });
+
+  test('Determine how many years a user has left to live on each planet', () => {
+    expect(superGalactic.yearsLeft()).toEqual({mercury:225.0, venus: 87.1, mars: 28.7, jupiter: 4.5});
   });
 });
