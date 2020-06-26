@@ -45,7 +45,7 @@ export class SuperGalactic{
 
   getAllPlanetAges() {
     let planetAges = {};
-
+   
     for(let planet of this.planetArray) {
       planetAges[planet] = this.galacticYears(this.age, planet);
     }
