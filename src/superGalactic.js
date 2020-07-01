@@ -21,7 +21,7 @@ export class SuperGalactic {
         planetYears = 11.86;
         break;
       default:
-        //planetYears = 1;
+        planetYears = 1;
     }
     return (parseFloat((age/planetYears).toFixed(1)));
   }

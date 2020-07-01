@@ -32,7 +32,7 @@ describe('SuperGalactic', () => {
     expect(superGalactic.galacticYears(sGAge, 'jupiter')).toEqual(2.3);
   });
 
-  test('Returns the users age in Earth years if planet passed to galacticYears has no match ', () => {
+  test('Returns the users age in Earth years if planet passed to galacticYears has no match', () => {
     expect(superGalactic.galacticYears(sGAge, 'the sun')).toEqual(27);
   });
 
