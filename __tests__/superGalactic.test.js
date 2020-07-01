@@ -32,6 +32,10 @@ describe('SuperGalactic', () => {
     expect(superGalactic.galacticYears(sGAge, 'jupiter')).toEqual(2.3);
   });
 
+  test('Returns the users age in Earth years if planet passed to galacticYears has no match ', () => {
+    expect(superGalactic.galacticYears(sGAge, 'the sun')).toEqual(27);
+  });
+
   test('Determine how many years a user has left to live on each planet', () => {
     expect(superGalactic.yearsLeft()).toEqual({mercury: "225.0", venus: "87.1", mars: "28.7", jupiter: "4.5"});
   });
